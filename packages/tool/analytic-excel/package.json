@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp clean && rollup -c"
   },
   "author": "书生",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "lodash-es": "^4.17.21"
+  }
 }
