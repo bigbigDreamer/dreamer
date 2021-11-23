@@ -177,6 +177,7 @@ class AnalyticCore implements BaseCore {
                         'The current file type is not currently supported, please upload an excel file in .xlsx ',
                     ),
                 );
+                this.$after?.();
                 console.error(
                     'The current file type is not currently supported, please upload an excel file in .xlsx',
                 );
