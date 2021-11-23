@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "dreamer",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.12.0 || ^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@umijs/test": "^3.0.5",
+    "babel-plugin-import": "^1.13.3",
+    "dumi": "^1.0.17",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "rollup": "^2.60.1",
+    "yorkie": "^2.0.0"
+  }
+}
