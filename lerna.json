@@ -1,9 +1,10 @@
 {
-  "packages": ["packages/tool/*", "packages/components/*"],
-  "command": {
-    "publish": {
-      "message": "chore(release): publish"
-    }
-  },
-  "version": "independent"
+    "packages": ["packages/tool/*", "packages/components/*"],
+    "command": {
+        "publish": {
+            "message": "chore(release): publish"
+        }
+    },
+    "ignoreChanges": ["**/package-lock.json", "**/__tests__/**", "**/*.md"],
+    "version": "independent"
 }
