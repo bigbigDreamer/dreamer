@@ -17,6 +17,10 @@
     "publishConfig": {
         "access": "public"
     },
+    "files": [
+        "es",
+        "lib"
+    ],
     "dependencies": {
         "exceljs": "^4.3.0",
         "lodash-es": "^4.17.21"
