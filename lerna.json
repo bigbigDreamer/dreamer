@@ -1,5 +1,5 @@
 {
-    "packages": ["packages/tool/*", "packages/components/*"],
+    "packages": ["packages/tool/**", "packages/components/**"],
     "command": {
         "publish": {
             "message": "chore(release): publish"

@@ -13,7 +13,7 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "bootstrap": "lerna bootstrap",
-      "publish": "lerna run build && lerna publish --yes --conventional-commits"
+    "publish": "lerna run build && lerna publish --yes --conventional-commits"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
