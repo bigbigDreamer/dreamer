@@ -187,6 +187,9 @@ class AnalyticCore implements BaseCore {
         }
     }
 
+    /**
+     * @desc 释放内存
+     */
     destroy() {
         this.$vm?.destroy();
         this.$excelBuffer = undefined;
