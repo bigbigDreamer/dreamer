@@ -1,15 +1,21 @@
 {
-  "name": "@bigdreamer/tool-analytic-excel",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "gulp clean && rollup -c"
-  },
-  "author": "书生",
-  "license": "ISC",
-  "dependencies": {
-    "exceljs": "^4.3.0",
-    "lodash-es": "^4.17.21"
-  }
+    "name": "@bigdreamer/tool-analytic-excel",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./es/index.js",
+    "types": "./es/index.d.ts",
+    "scripts": {
+        "build": "gulp clean && rollup -c"
+    },
+    "homepage": "https://github.com/bigbigDreamer/dreamer/tree/main/packages/tool/analytic-excel",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bigbigDreamer/dreamer/tree/main/packages/tool/analytic-excel"
+    },
+    "author": "书生",
+    "license": "ISC",
+    "dependencies": {
+        "exceljs": "^4.3.0",
+        "lodash-es": "^4.17.21"
+    }
 }
