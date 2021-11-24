@@ -1,6 +1,6 @@
 {
     "name": "@bigdreamer/tool-analytic-excel",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "description": "",
     "main": "./es/index.js",
     "types": "./es/index.d.ts",
